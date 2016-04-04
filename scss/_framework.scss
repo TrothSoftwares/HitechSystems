@@ -1,0 +1,11 @@
+$baseColor: #e1ba60;
+
+$raleway: 'Raleway', sans-serif;
+$opensans: 'Open Sans', sans-serif;
+$alegreya: 'Alegreya', serif;
+$ptserif: 'PT Serif', serif;
+
+// Mixins
+@mixin transition($property: all, $duration: 300ms, $animate: linear, $delay:0s){
+    transition: $property $duration $animate $delay;
+}

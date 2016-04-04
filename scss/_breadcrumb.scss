@@ -1,0 +1,36 @@
+.page-cover{
+    background: url(../images/page-cover.jpg) no-repeat scroll center 0;
+    background-size: cover;
+    padding: 60px 0;
+    text-transform: uppercase;
+    h2{
+        font: bold 50px/1 $alegreya;
+        color: #fff;
+        margin: 0 0 15px;
+        @media (max-width: 767px){
+            font-size: 30px;
+        }
+    }
+    .breadcrumb{
+        background: none;
+        padding: 0;
+        li{
+            font: 13px/1 $opensans;
+            color: #FFF;
+            float: left;
+            & + li:before{
+                padding: 0 7px;
+                content: "\f105";
+                display: inline-block;
+                font: normal normal normal 14px/1 FontAwesome;
+                font-size: inherit;
+                text-rendering: auto;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+            a{
+                color: #FFF;
+            }
+        }
+    }
+}

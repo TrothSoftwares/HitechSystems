@@ -1,0 +1,232 @@
+.request_form,.free_quote{
+    .form-control{
+        width: 100%;
+        height: 47px;
+        border-radius: 0;
+        margin-bottom: 15px;
+        border:1px solid #e5e5e5;
+        box-shadow: none;
+        color: #000;
+        font: 14px/45px $opensans;
+        padding: 0 20px;
+        &::-moz-placeholder {
+            color: #898989;
+            opacity: 1;
+        }
+        &:-ms-input-placeholder {
+            color: #898989;
+        }
+        &::-webkit-input-placeholder {
+            color: #898989;
+        }
+        &.bootstrap-select{
+            padding: 0;
+            .btn{
+                font: 14px/45px $opensans;
+                padding: 0 20px;
+                background: none;
+                box-shadow: none;
+                border: none;
+                color: #898989;
+                .bs-caret{
+                    color: #605f5f;
+                }
+            }
+            .dropdown-menu{
+                margin: 0;
+                border-radius: 0;
+                ul{
+                    li{
+                        a{
+                            font: 14px/25px $opensans;
+                            &:hover,&:focus{
+                                background: #222;
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+    textarea.form-control{
+        height: 122px;
+        resize: none;
+    }
+    button[type="submit"]{
+        background: $baseColor;
+        border: none;
+        text-shadow: none;
+        color: #222;
+        font-weight: bold;
+        font-family: "Open Sans", sans-serif;
+        padding: 9px 40px;
+        line-height: 26px;
+        font-size: 14px;
+        margin-top: 15px;
+        &:hover,&:focus{
+            background: #222;
+            color: #fff;
+        }
+    }
+}
+
+.touch{
+    .touch_bg{
+        .section_header{
+            p{
+                max-width: 840px;
+            }
+        }
+        .touch_top{
+            padding-bottom: 50px;
+            ul{
+                border: 1px solid #e5e5e5;
+                padding: 12px 0;
+                .item{
+                    width: calc(100% / 3);
+                    float: left;
+                    padding: 15px 28px;
+                    text-align: center;
+                    border-right: 1px solid #ebebeb;                    
+                    @media (max-width: 1199px){
+                        width: 32%;
+                        padding: 0 15px;
+                        &:nth-child(2){
+                            width: 34%;
+                        }
+                    }
+                    @media (max-width: 991px){
+                        border: none;
+                        width: 100%;
+                        & + .item{
+                            margin-top: 15px;
+                        }
+                        &:nth-child(2){
+                            width: 100%;
+                        }
+                    }
+                    .media{
+                        .media-left{
+                            padding-right: 30px;
+                            vertical-align: middle;
+                            @media (max-width: 1280px){
+                                padding-right: 20px;
+                            }
+                            a{
+                                color: #e1ba60;
+                                border: 1px solid #e1ba60;
+                                border-radius: 100%;
+                                display: block;
+                                width: 48px;
+                                height: 48px;
+                                i{
+                                    border-radius: 50%;
+                                    font-size: 30px;
+                                    line-height: 32px;
+                                    padding-top: 8px;
+                                }
+                            }
+                        }
+                        .media-body{
+                            text-align: left;
+                            font: 15px/26px $opensans;
+                            color: #898989;
+                            @media (max-width: 1199px){
+                                font-size: 13px;
+                                line-height: 22px;
+                            }                            
+                        }
+                    }
+                    &:last-child{
+                        border-right: none;
+                    }
+                }
+            }
+        }
+        .touch_middle{
+            padding-bottom: 85px;
+            .input_form{
+                form{
+                    .form-control{
+                        margin-bottom: 20px;
+                        border-radius: 0;
+                        font: 15px/26px $opensans;
+                        color: #959595;
+                        padding: 13px 20px;
+                        border: 1px solid #e1e1e1;
+                        height: auto;
+                        box-shadow: none;
+                        &:hover,&:focus{
+                            border: 1px solid #d6d6d6;
+                            border-color: #d6d6d6;
+                            outline: none;
+                        }
+                    }
+                    textarea.form-control{
+                        margin-bottom: 30px;
+                        resize: none;
+                    }
+                    button{
+                        background: $baseColor;
+                        text-transform: uppercase;
+                        font: bold 14px/21px $opensans;
+                        color: #222;
+                        padding: 10px 20px;
+                        text-shadow: none;
+                        letter-spacing: 1px;
+                        border: none;
+                        i{
+                            font-size: 18px;
+                            padding-left: 15px;
+                        }
+                        &:hover,&:focus{
+                            color: #fff;
+                            background: #232323;
+                        }
+                    }
+                }
+            }
+            .open_hours{
+                padding-left: 60px;
+                @media (max-width: 1199px){
+                    padding-left: 15px;
+                }
+                @media (max-width: 991px){
+                    padding-top: 30px;
+                }
+                .hours{
+                    border: 1px solid #e3e3e3;
+                    background: #f5f5f5;
+                    padding: 40px;
+                    @media (max-width: 479px){
+                        padding: 15px;
+                    }
+                    h2{
+                        font: bold 28px/1 $alegreya;
+                        padding: 0;
+                        color: #282828;
+                        padding-bottom: 30px;
+                        margin: 0;
+                    }
+                    ul{
+                        li{
+                            font: 15px/21px $opensans;
+                            text-transform: capitalize;
+                            color: #898989;
+                            padding-bottom: 20px;
+                            span{
+                                float: right;
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+#mapBox{
+    height: 415px;
+}

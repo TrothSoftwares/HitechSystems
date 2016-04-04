@@ -1,0 +1,62 @@
+.who_we_are{
+    .section_header{
+        .margin_bot{
+            margin-bottom: 0;
+        }
+    }
+    .slogan_area{
+        .slogan + .slogan{
+            @media (max-width: 767px){
+                margin-top: 50px;
+            }
+        }
+        img{
+            width: 100%;
+        }
+        h4{
+            margin: 35px 0 10px;
+            font-family: $raleway;
+            font-weight: bold;
+            font-size: 16px;
+            letter-spacing: 0.30;
+            line-height: 21px;
+            text-transform: uppercase;
+            color:#242424;
+        }
+        p{  margin-bottom: 0px;
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: 0.30;
+            color: #989898;
+            font-family: $opensans;
+        }
+    }
+}
+
+
+.fulwid_bg{
+    background: #222222;
+}
+
+.expert{
+    img{
+        margin-bottom: 15px;        
+    }
+    h4{
+        font-family: $opensans;
+        font-size: 16px;
+        font-weight: bold;
+        letter-spacing: 0.30px;
+        line-height: 28px;
+        color: #1a2329;
+        margin: 20px 0 10px;
+        text-transform: uppercase;
+    }
+    p{
+        font-family: $opensans;
+        font-size: 14px;
+        letter-spacing: 0.30;
+        line-height: 26px;
+        color: #898989;
+    }
+}

@@ -1,0 +1,20 @@
+.clients{
+    padding-bottom: 65px;
+    .clients-logos{
+        margin-top: -15px;
+        .client{
+            padding: 15px;
+            @media (max-width: 479px){
+                width: 50%;
+            }
+        }
+        .inner-logo{
+            border: 1px solid #f0f0f0;
+            text-align: center;
+            line-height: 128px;
+            img{
+               max-width: 100%;
+            }
+        }
+    }
+}

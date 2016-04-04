@@ -1,0 +1,68 @@
+.content-404.row{
+    background: url(../images/404.jpg) no-repeat scroll center top;
+    padding: 120px 0 100px;
+    @media (max-width: 991px){
+        background-position: right top;
+    }
+    @media (max-width: 767px){
+        text-align: center;
+        padding: 70px 0;
+        margin-bottom: -45px;
+    }
+    h2{
+        color: $baseColor;
+        font: 800 200px/1 $opensans;
+        margin: 0;
+        @media (max-width: 767px){
+            font-size: 120px;
+        }
+    }
+    h3{
+        font: bold 50px/53px $alegreya;
+        color: #fff;
+        margin: 0;
+        @media (max-width: 767px){
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+    h4{
+        font: 300 25px/53px $opensans;
+        margin: 0 0 35px;
+        color: #fff;
+        @media (max-width: 767px){
+            font-size: 15px;
+            line-height: 1.5;
+            margin: 0 0 35px;
+        }
+    }
+    a.redirect-to-home{
+        font: bold 16px/55px $opensans;
+        color: #000;
+        border-radius: 5px;
+        background-image: -moz-linear-gradient( 90deg, rgb(206,167,77) 0%, rgb(225,186,96) 100%);
+        background-image: -webkit-linear-gradient( 90deg, rgb(206,167,77) 0%, rgb(225,186,96) 100%);
+        background-image: -ms-linear-gradient( 90deg, rgb(206,167,77) 0%, rgb(225,186,96) 100%);  
+        border: none;
+        padding: 0 138px;
+        text-transform: uppercase;
+        text-shadow: none;
+        margin-bottom: 67px;
+        &:hover,&:focus{
+            background-image: none;
+            background: #2a2a2a;
+            color: #fff;
+        }
+        @media (max-width: 767px){
+            padding: 0 50px;
+            line-height: 45px;
+        }
+    }
+    img.cons{
+        margin-left: 18px;
+        max-width: 100%;
+        @media (max-width: 767px){
+            margin-left: 0;
+        }
+    }
+}

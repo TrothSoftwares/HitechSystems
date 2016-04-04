@@ -1,0 +1,127 @@
+.pricing{
+    padding-bottom: 0;
+    .pricing_table{
+        .item{
+            text-align: center;
+            @media (max-width: 991px){
+                padding: 15px;
+            }
+            @media (max-width: 560px){
+                width: 70%;
+                margin: 0 auto;
+                float: none;
+            }
+            @media (max-width: 479px){
+                width: 300px;
+            }
+            .table_header{
+                background: #d6b161;
+                color: #fff;
+                h2{
+                    margin: 0;
+                    padding-top: 30px;
+                    font: bold 60px/1 $opensans;
+                    span{
+                        font: 600 50px/1 $opensans;
+                        vertical-align: top;
+                    }
+                }
+                h5{
+                    margin: 0;
+                    padding: 10px 0 20px;
+                    font: 12px $opensans;
+                    text-transform: uppercase;
+                    letter-spacing: 3px;
+                }
+            }
+            .table_types{
+                font: bold 15px/16px $raleway;
+                color: #fff;
+                background: #000;
+                text-transform: uppercase;
+                padding: 12px 0;
+            }
+            .table_data{
+                border: 1px solid #dadada;
+                padding-bottom: 50px;
+                padding-top: 20px;
+                @include transition;
+                ul{
+
+                    margin-bottom: 30px;
+                    padding: 0 20px;
+                    li{
+                        border-bottom: 1px solid #ececec;
+                        color: #898989;
+                        font: 14px/44px $opensans;
+                        @include transition;
+                        &:last-child{
+                            border: none;
+                        }
+                    }
+                }
+                a{
+                    text-transform: uppercase;
+                    font: 600 13px/22px $opensans;
+                    color: #4c4c4c;
+                    border: 1px solid #c4c4c4;
+                    padding: 12px 24px;
+                    border-radius: 5px;
+                    letter-spacing: 1px;
+                    @include transition;
+                    i{
+                        margin-left: 10px;
+                        font: 14px/22px;
+                    }
+                }
+            }
+            &:hover{
+                .table_data{
+                    a{
+                        background: #000;
+                        color: #fff;
+                        border: none;
+                    }
+                }
+            }
+        }
+        .business{
+            .table_data{
+                ul{
+                    li{
+                        border-bottom: 1px solid #373737;
+                        &:last-child{
+                            border: none;
+                        }
+                    }
+                }
+                background: #252525;
+                border-color: #252525;
+                a{
+                    background: #d6b161;
+                    color: #fff;
+                    border: none;
+                }
+            }
+            .table_types{
+                background: #b39656;
+            }
+        }
+    }
+    &.hasBg{
+        background: url(../images/our_team/bg2.jpg) no-repeat scroll center center;
+        background-size: cover;
+        .pricing_table{
+            .item{
+                .table_data{
+                    background: #fff;
+                }
+            }
+            .business{
+                .table_data{
+                    background: #252525;
+                }                
+            }
+        }
+    }
+}

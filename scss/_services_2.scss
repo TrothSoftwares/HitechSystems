@@ -1,0 +1,212 @@
+.services{
+    .sidebar{
+        width: 330px;       
+        @media (max-width: 767px){
+            width: auto;
+        }
+        .nav-tabs{
+            border-bottom: 0px;
+            margin-bottom: 30px;
+            background: #f0f0f0;
+            padding: 10px;       
+            @media (max-width: 767px){
+                padding: 5px;
+            }
+            li{
+                width: 100%;
+                margin-bottom: 10px;
+                @media (max-width: 767px){
+                    width: auto;
+                    float: left;
+                    padding: 5px;
+                    margin: 0;
+                }
+                @media (max-width: 480px){
+                    width: 100%;
+                }
+                &:last-child{
+                    margin-bottom: 0px;
+                }
+                a{  
+                    background: #fff;
+                    border:none;
+                    margin-right: 0px;
+                    letter-spacing: 0.30px;
+                    border-radius: 0px;
+                    color:#000;
+                    font-size: 15px;
+                    line-height: 35px;
+                    font-family: $opensans;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    &:hover,&:focus{
+                        background: #000;
+                        color:$baseColor;
+                        border:0px;
+                    }
+                    .fa{
+                        margin-right: 15px;
+                        padding-left: 5px;       
+                        @media (max-width: 991px){
+                            margin-right: 10px;
+                            padding-left: 0;
+                        }
+                    }
+                }
+                &.active{
+                    a{
+                        background: #000;
+                        color:$baseColor;
+                        border:0px;
+                    }
+                }
+            }
+        }
+        
+        .sidebar_ad{       
+            @media (max-width: 767px){
+                width: auto;
+                float: left;
+                margin-right: 30px;
+            }
+            img{
+                max-width: 100%;
+            } 
+        } 
+        .downloads{
+            float: left;
+            padding-top: 50px;
+            h3{
+                font-family: $alegreya;
+                font-weight: bold;
+                font-size: 20px;
+                line-height: 28px;
+                letter-spacing: 0.10px;
+                margin-top: 0;
+                &:after{
+                    content: " ";
+                    width: 35px;
+                    height:2px;
+                    display: inline-block;
+                    background: $baseColor;
+                    margin-left: 15px;
+
+                }
+            }
+            .dload{
+                    margin-bottom: 20px;
+                    background: #f0f0f0;
+                    padding: 5px;
+                    &:last-child{
+                        margin-bottom: 0px;
+                    }
+
+                .dlbg{
+                    background: #FBFBFB;
+                    padding: 10px;
+                    a{
+                        font-family: $opensans;
+                        font-weight: 600;
+                        color:#4c4c4c;
+                        line-height: 22px;
+                        letter-spacing: 0.30px;
+                        text-transform: uppercase;
+                        padding-left: 10px;
+                    }
+                    img{
+                        padding-left: 60px;
+                    }
+                }
+            }
+        }
+    }
+    .tab_pages{
+        width: calc(100% - 330px);                      
+        @media (max-width: 767px){
+            width: 100%;
+            padding-top: 40px;
+            clear: both;
+        }
+        .tab-content{
+            padding-left: 40px;
+            @media (max-width: 991px){
+                padding-left: 0;
+            }
+            .tab-pane{ 
+                .tab_inn_cont_1{
+                    img{
+                        width: 100%;
+                        padding-bottom: 30px;
+                        padding-top: 45px;
+                    }
+                    h3{
+                        margin-top: 0px;
+                        margin-bottom: 10px;
+                        font-family: $alegreya;
+                        font-weight: bold;
+                        font-size: 24px;
+                        list-style: 28px;
+                        text-transform: capitalize;
+                        letter-spacing: 0.30px;
+                        color: #242424;
+                        
+                    }
+                    p{
+                        padding: 0px;
+                        font-family: $opensans;
+                        font-size: 15px;
+                        line-height: 28px;
+                        letter-spacing: 0.30px;
+                        color:#898989;
+                        
+                    }
+                }
+                .tab_inn_cont_2{
+                    padding-top: 30px;
+                    .cont_left{                        
+                        @media (max-width: 991px){
+                            width: 100%;
+                        }
+                        h3{
+                            padding-bottom: 20px; 
+                            margin: 0px;
+                            font-family: $alegreya;
+                            font-weight: bold;
+                            font-size: 24px;
+                            line-height: 28px;
+                            letter-spacing: 0.30px;
+                            color:#242424;
+                        }
+                        p{
+                            padding: 0px;
+                            font-family: $opensans;
+                            font-size: 15px;
+                            line-height: 28px;
+                            letter-spacing: 0.30px;
+                            color:#898989;
+                        }
+                    }
+                    .cont_right{                      
+                        @media (max-width: 991px){
+                            width: 100%;
+                        }
+                        img{
+                            width: 100%;       
+                            @media (max-width: 767px){
+                                width: auto;
+                                float: left;
+                                margin: 10px 0;                                
+                            }
+                            & + img{
+                                margin-top: 30px;                                       
+                                @media (max-width: 767px){
+                                    margin: 10px 0;
+                                }
+                            }               
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
