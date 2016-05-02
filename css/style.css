@@ -6358,3 +6358,7 @@ font: bold 25px/28px "Raleway", sans-serif
 /* color: #e1ba60; */
 font: 600 20px/28px "Raleway", sans-serif
 }
+.services_carousel .owl-item .item .inner a
+{
+  color: #888;
+}
