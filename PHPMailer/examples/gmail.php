@@ -40,19 +40,21 @@ $mail->SMTPSecure = 'tls';
 $mail->SMTPAuth = true;
 
 //Username to use for SMTP authentication - use full email address for gmail
-$mail->Username = "anvrnazr@gmail.com";
+$mail->Username = "rpjhitechsystems@gmail.com";
 
 //Password to use for SMTP authentication
-$mail->Password = "9446203706";
+$mail->Password = "rpjhitech";
+// $mail->Password = "9446203706";
 
 //Set who the message is to be sent from
-$mail->setFrom('rpjhitechsystems@gmail.com', ' Last');
+// $mail->setFrom('rpjhitechsystems@gmail.com', 'HiTech Systems');
+$mail->setFrom('anvrnazr@gmail.com', 'Anwar Nazar');
 
 //Set an alternative reply-to address
-$mail->addReplyTo('rpjhitechsystems@gmail.com', 'First Last');
+$mail->addReplyTo('anvrnazr@gmail.com', 'Anwar Nazar');
 
 //Set who the message is to be sent to
-$mail->addAddress('talhaqqq@gmail.com', 'John Doe');
+$mail->addAddress('rpjhitechsystems@gmail.com', ' HiTech Systems');
 
 //Set the subject line
 $mail->Subject = 'PHPMailer GMail SMTP test';
@@ -65,7 +67,7 @@ $mail->msgHTML(file_get_contents('contents.html'), dirname(__FILE__));
 $mail->AltBody = 'This is a plain-text message body';
 
 //Attach an image file
-$mail->addAttachment('images/phpmailer_mini.png');
+// $mail->addAttachment('images/phpmailer_mini.png');
 
 //send the message, check for errors
 if (!$mail->send()) {
