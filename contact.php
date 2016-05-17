@@ -173,16 +173,104 @@
             <div class="row touch_middle">
                 <div class="col-md-8 input_form">
                     <form>
-                        <input type="text" class="form-control" id="exampleInputName" placeholder="First">
-                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-                        <input type="text" class="form-control" id="exampleInputSubject" placeholder="Subject">
-                        <textarea class="form-control" rows="6" placeholder="Message"></textarea>
-                        <button type="submit" class="btn btn-default" href="PHPMailer/examples/gmail.php" >Submit Now<i class="fa fa-angle-double-right"></i></button>
+                        <input type="text" class="form-control" id="exampleInputName" placeholder="First"name="name">
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" name="mail">
+                        <input type="text" class="form-control" id="exampleInputSubject" placeholder="Subject"name="subject">
+                        <textarea class="form-control" rows="6" placeholder="Message"name="message"></textarea>
+                        <button type="submit" class="btn btn-default" name="sub" >Submit Now<i class="fa fa-angle-double-right"></i></button>
                     </form>
                 </div>
+
                 <?php
-                if isse
+                if(isset($_POST['submit']))
+                {
+                  $mail=$_POST['mail'];
+                  $name=$_POST['name'];
+                  $subject=$_POST['subject'];
+                  $msg=$_POST['message'];
+
+                  echo "string";
+                /**
+                }
+                 * This example shows settings to use when sending via Google's Gmail servers.
+                 */
+
+              //   //SMTP needs accurate times, and the PHP time zone MUST be set
+              //   //This should be done in your php.ini, but this is how to do it if you don't have access to that
+              //   date_default_timezone_set('Etc/UTC');
+              //
+              //   require 'PHPMailer/PHPMailerAutoload.php';
+              //
+              //   //Create a new PHPMailer instance
+              //   $mail = new PHPMailer;
+              //
+              //   //Tell PHPMailer to use SMTP
+              //   $mail->isSMTP();
+              //
+              //   //Enable SMTP debugging
+              //   // 0 = off (for production use)
+              //   // 1 = client messages
+              //   // 2 = client and server messages
+              //   $mail->SMTPDebug = 2;
+              //
+              //   //Ask for HTML-friendly debug output
+              //   $mail->Debugoutput = 'html';
+              //
+              //   //Set the hostname of the mail server
+              //   $mail->Host = 'smtp.gmail.com';
+              //   // use
+              //   // $mail->Host = gethostbyname('smtp.gmail.com');
+              //   // if your network does not support SMTP over IPv6
+              //
+              //   //Set the SMTP port number - 587 for authenticated TLS, a.k.a. RFC4409 SMTP submission
+              //   $mail->Port = 587;
+              //
+              //   //Set the encryption system to use - ssl (deprecated) or tls
+              //   $mail->SMTPSecure = 'tls';
+              //
+              //   //Whether to use SMTP authentication
+              //   $mail->SMTPAuth = true;
+              //
+              //   //Username to use for SMTP authentication - use full email address for gmail
+              //   $mail->Username = "rpjhitechsystems@gmail.com";
+              //
+              //   //Password to use for SMTP authentication
+              //   $mail->Password = "rpjhitech";
+              //   // $mail->Password = "9446203706";
+              //
+              //   //Set who the message is to be sent from
+              //   // $mail->setFrom('rpjhitechsystems@gmail.com', 'HiTech Systems');
+              //   $mail->setFrom('anvrnazr@gmail.com', 'Anwar Nazar');
+              //
+              //   //Set an alternative reply-to address
+              //   $mail->addReplyTo('anvrnazr@gmail.com', 'Anwar Nazar');
+              //
+              //   //Set who the message is to be sent to
+              //   $mail->addAddress('rpjhitechsystems@gmail.com', ' HiTech Systems');
+              //
+              //   //Set the subject line
+              //   $mail->Subject = 'PHPMailer GMail SMTP test';
+              //
+              //   //Read an HTML message body from an external file, convert referenced images to embedded,
+              //   //convert HTML into a basic plain-text alternative body
+              //   $mail->msgHTML(file_get_contents('contents.html'), dirname(__FILE__));
+              //
+              //   //Replace the plain text body with one created manually
+              //   $mail->AltBody = $message;
+              //
+              //   //Attach an image file
+              //   // $mail->addAttachment('images/phpmailer_mini.png');
+              //
+              //   //send the message, check for errors
+              //   if (!$mail->send()) {
+              //       echo "Mailer Error: " . $mail->ErrorInfo;
+              //   } else {
+              //       echo "Message sent!";
+              //   }
+              // }
+
                 ?>
+
                 <div class="col-md-4 open_hours">
                     <div class="hours">
                         <h2>Opening Hours</h2>
